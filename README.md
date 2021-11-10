@@ -1,6 +1,6 @@
 # Travel Crafter
 
-### Live Link: https://travel-crafter-mahmud.web.app//
+### Live Link: https://travel-crafter-mahmud.web.app/
 
 ## Website Features:
 • We are the world best travel agency.
