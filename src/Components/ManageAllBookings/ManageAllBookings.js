@@ -5,7 +5,7 @@ const ManageAllBookings = () => {
     const [services, setServices] = useState([])
     const [control, setControl] = useState(false)
     useEffect(() => {
-        fetch('http://localhost:5000/allOrders')
+        fetch('https://safe-cliffs-06637.herokuapp.com/allOrders')
             .then(res => res.json())
             .then(data => setServices(data))
     }, [control])
@@ -13,7 +13,7 @@ const ManageAllBookings = () => {
     const handleDelete = (id) => {
         const proceed = window.confirm('Are you sure,you want to Delete the Booking???');
         if (proceed) {
-            fetch(`http://localhost:5000/deleteOrder/${id}`, {
+            fetch(`https://safe-cliffs-06637.herokuapp.com/deleteOrder/${id}`, {
                 method: 'DELETE',
             })
                 .then(res => res.json())

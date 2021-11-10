@@ -9,7 +9,7 @@ const MyBooking = () => {
     const [services, setServices] = useState([])
     const [control, setControl] = useState(false)
     useEffect(() => {
-        fetch(`http://localhost:5000/myOrders/${email}`)
+        fetch(`https://safe-cliffs-06637.herokuapp.com/myOrders/${email}`)
             .then(res => res.json())
             .then(data => setServices(data))
     }, [email, control])
@@ -17,7 +17,7 @@ const MyBooking = () => {
     const handleDelete = (id) => {
         const proceed = window.confirm('Are you sure,you want to cancel the booking???');
         if (proceed) {
-            fetch(`http://localhost:5000/cancelOrder/${id}`, {
+            fetch(`https://safe-cliffs-06637.herokuapp.com/cancelOrder/${id}`, {
                 method: 'DELETE',
             })
                 .then(res => res.json())

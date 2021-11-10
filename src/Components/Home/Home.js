@@ -16,7 +16,7 @@ const Home = () => {
                         <h1><strong>Travel</strong> <span className='text-primary'>Crafter</span></h1>
                         <h2>Where the journey begins!</h2>
                         <h4>We make dreams come true!</h4>
-                        <p>Traveling is the spice of life. We are professional planners for your vacations. No matter where you're going from, we take you there.</p>
+                        <h6>Traveling is the spice of life. We are professional planners for your vacations. No matter where you're going from, we take you there.</h6>
                     </div>
                     <div className="col-sm-6 img-main">
                         <img src="" alt="" />

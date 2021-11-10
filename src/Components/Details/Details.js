@@ -10,14 +10,14 @@ const Details = () => {
     const email = user.email
     const [service, setService] = useState({});
     useEffect(() => {
-        fetch(`http://localhost:5000/services/${serviceId}`)
+        fetch(`https://safe-cliffs-06637.herokuapp.com/services/${serviceId}`)
             .then(res => res.json())
             .then(data => setService(data))
     }, [serviceId])
     const { register, handleSubmit } = useForm();
     const onSubmit = data => {
         data.email = email;
-        fetch('http://localhost:5000/confirmOrder', {
+        fetch('https://safe-cliffs-06637.herokuapp.com/confirmOrder', {
             method: 'POST',
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify(data)

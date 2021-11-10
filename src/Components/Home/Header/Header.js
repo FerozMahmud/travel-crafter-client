@@ -7,7 +7,7 @@ import './Header.css'
 const Header = () => {
     const activeStyle = {
         fontWeight: "bold",
-        color: "red"
+        color: "lightgreen"
     }
     const { user, logOut } = useAuth()
 
@@ -23,10 +23,10 @@ const Header = () => {
                         <NavLink activeStyle={activeStyle} className="nav" to="/manageAllBookings">Manage All Bookings</NavLink>
                         <NavLink activeStyle={activeStyle} className="nav" to="/addBooking">Add Booking</NavLink>
 
-                        {user.email && <span style={{ color: 'yellow' }}>Hello <strong style={{ color: 'green' }}>{user.displayName}</strong></span>}
+                        {user.email && <span style={{ color: 'lightgreen' }}>Hello <strong >{user.displayName}</strong></span>}
                         {
                             user.email ?
-                                <button className="login-logout btn btn-info mx-2" onClick={logOut}>Log out</button>
+                                <button className="login-logout btn btn-danger mx-2" onClick={logOut}>Log out</button>
                                 :
                                 <NavLink activeStyle={activeStyle} className="login-logout" to="/login">Login</NavLink>
                         }

@@ -5,9 +5,10 @@
 
 
 .nav{
-    padding-right: 10px;
+    padding-right: 17px;
     color: white;
     text-decoration: none;
+    font-weight: 500;
 }
 
 .login-logout{
