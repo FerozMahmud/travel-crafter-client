@@ -3,12 +3,12 @@
 ### Live Link: https://travel-crafter-mahmud.web.app/
 
 ## Website Features:
-• We are the world best travel agency.
+• This is a project of travel agency related website.
 <br/>
-• Get the best offers and tour plan here.
+● In this project users can log in via email-password or Google with firebase authentication.
 <br/>
-• Get information about the world best tourist places.
+● Admin can add new services and can cancel orders of all users.
 <br/>
-• Book and get the best plan for you.
+● Users can only see their own orders and can cancel orders of their own.
 <br/>
-• Learn more about traveling outside your country.
+● I used HTML, CSS, React JS, React Bootstrap, React Router, Node JS, MongoDB, Express JS, Context API and Firebase in this project.
