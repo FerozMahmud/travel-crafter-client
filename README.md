@@ -3,7 +3,7 @@
 ### Live Link: https://travel-crafter-mahmud.web.app/
 
 ## Website Features:
-• This is a project of travel agency related website.
+● This is a project of travel agency related website.
 <br/>
 ● In this project users can log in via email-password or Google with firebase authentication.
 <br/>
